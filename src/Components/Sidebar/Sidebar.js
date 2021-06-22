@@ -39,7 +39,7 @@ const Sidebar = ({ children }) => {
       <div className="w-9/12 h-12  ">
         <div className="flex justify-end pr-6 pt-2 items-center">
           <img className="h-8 w-8 mr-2" src={avatar} alt="" />
-          <p className="pt-3">Kishore</p>
+          <p className="pt-1">Kishore</p>
           <img className="h-6 w-5 mx-4 pt-1" src={Notifications} alt="" />
           <img className="h-6 w-5 mx-4 pt-1" src={Help} alt="" />
         </div>
@@ -56,13 +56,13 @@ const Sidebar = ({ children }) => {
           <div className=" w-3/12 	pt-1">
             <div className="border-l-2 border-gray-200 h-8 flex  items-center">
               <img className="w-6 h-4 ml-2" src={box} alt="" />
-              <p className="pl-2 pt-3">Approval Matrix</p>
+              <p className="pl-2 ">Approval Matrix</p>
             </div>
           </div>
 
           <div className=" w-5/12 "></div>
           <div className=" w-3/12 flex pt-2 items-center">
-            <img src={Sync} className="w-4 h-4 mb-3 mr-2" alt="" />
+            <img src={Sync} className="w-4 h-4  mr-2" alt="" />
             <p>Last synced 15 mins ago</p>
           </div>
         </div>

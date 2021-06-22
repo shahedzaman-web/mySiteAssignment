@@ -4,10 +4,10 @@ import Circle from "./../../image/Ellipse_126.png"
 const PermissionTable = ({data}) => {
 const {dept,access_level,no_of_members}=data
     return (
-        <div className="w-full  h-12 border-b-2 border-gray-300 flex items-center text-center ">
-                <div className="w-4/12  h-10 text-left flex items-center pl-2">
+        <div className="w-full  h-12 border-b-2 border-gray-300 flex items-center text-center my-1 ">
+                <div className="w-4/12  h-10 text-left flex items-center pl-2 my-1">
             <img className="w-3 h-3 " src={Circle} alt="" />
-                    <p className="pl-2 pt-3">{dept}</p>
+                    <p className="pl-2 ">{dept}</p>
                 </div>
                 <div className="w-3/12  h-10 mt-1">
                 <p className={ access_level === "All Access" ? "p-1 mb-1 px-3 bg-green-200 rounded-3xl border-1 border-green-500 text-green-500" : "p-1 px-3 bg-red-200 rounded-3xl border-1 border-red-500 text-red-500"}>{access_level}</p>
@@ -17,7 +17,7 @@ const {dept,access_level,no_of_members}=data
                 </div>
                 <div className="w-3/12  h-10 flex pl-20">
          
-                <p className="py-2">
+                <p className="">
                     1 min ago</p>
             <Link to="/accessControl">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mt-1 ml-10 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">

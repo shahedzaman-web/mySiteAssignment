@@ -14,6 +14,7 @@ const AccessControlTable = ({data}) => {
       { !isClicked && <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
 </svg>}
+
 {
     isClicked && 
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -24,7 +25,7 @@ const AccessControlTable = ({data}) => {
 
 
         </button>
-            <p className="pl-2 pt-3">{dept}</p>
+            <p className="pl-2">{dept}</p>
         </div>
    
         <div className="w-3/12  h-10 mt-2">
@@ -38,7 +39,7 @@ const AccessControlTable = ({data}) => {
         <p className="">
             1 min ago</p> 
           
-<div className="pb-2 pl-2">
+<div className="pl-2">
 <label className="switch">
   <input type="checkbox" />
   <span className="slider round"></span>
@@ -54,7 +55,7 @@ const AccessControlTable = ({data}) => {
           <div className="w-1/2">
           <p className="ml-10">All aspects in the bidding module</p>
             <div className="flex flex-col ml-20">
-                <p>Access Control</p>
+                <p className="my-2">Access Control</p>
                 <label><input className="checked:bg-purple-600" type="radio" name="question-one" value="no" /> All Access
                <br />
                 <small className="ml-4 text-gray-300">Can access all items</small>
@@ -67,7 +68,7 @@ const AccessControlTable = ({data}) => {
           </div>
           <div className="w-1/2 mt-10  py-4">
               <div className="border-l-2 border-gray-200 pl-4">
-              <p>Permissions</p>
+              <p className="mb-2">Permissions</p>
             <div className="flex flex-col">
               <label><input className="pl-8  checked:bg-purple-600 " type="checkbox" name="question-one" value="no" /> View Items in access</label>
               <label><input className="pl-4" type="checkbox" name="question-one" value="no" /> Edit items in access</label>
